@@ -23,7 +23,7 @@ This project uses XML, XSD, XSLT, and Python for managing recipes, menus, orders
       - Scenario5.xslt: Exports the data to JSON format, providing a structured and readable JSON output for integration with other systems​(Scenario5).
 
   - *Python Script :*
-  - 
+
       - Traitement.py: Processes XML data using XSLT transformations and validates XML against the XSD schema. This script automates data processing, making it easier to handle multiple transformation scenarios and export options.
 
 *Key Features :*
