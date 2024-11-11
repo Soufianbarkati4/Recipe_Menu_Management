@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Définition simpleType pour ID -->
+  <xs:simpleType name="ID">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Définition de la recette -->
+  <xs:complexType name="Recette">
+    <xs:sequence>
+      <xs:element name="ID_Recette" type="ID"/>
+      <xs:element name="Nom" type="xs:string"/>
+      <xs:element name="Description" type="xs:string"/>
+      <xs:element name="Type" type="xs:string"/>
+      <xs:element name="Ingredients" type="Ingredient" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition de l'ingrédient -->
+  <xs:complexType name="Ingredient">
+    <xs:sequence>
+      <xs:element name="ID_Ingredient" type="ID"/>
+      <xs:element name="Nom" type="xs:string"/>
+      <xs:element name="Quantite" type="xs:decimal"/>
+      <xs:element name="Unite" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition du menu -->
+  <xs:complexType name="Menu">
+    <xs:sequence>
+      <xs:element name="ID_Menu" type="ID"/>
+      <xs:element name="Nom" type="xs:string"/>
+      <xs:element name="Prix" type="xs:decimal"/>
+      <xs:element name="Recettes" type="Recette" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+<!-- Définition de la commande -->
+<xs:complexType name="Commande">
+    <xs:sequence>
+      <xs:element name="ID_Commande" type="ID"/>
+      <xs:element name="Total" type="xs:decimal"/>
+      <xs:element name="Mode_paiement" type="xs:string"/>
+      <xs:element name="ID_Client" type="ID"/>
+      <xs:element name="ID_Livreur" type="ID"/>
+      <xs:element name="Commentaires" type="Commentaire" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Menus" type="Menu" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition du client -->
+  <xs:complexType name="Client">
+    <xs:sequence>
+      <xs:element name="ID_Client" type="ID"/>
+      <xs:element name="Nom" type="xs:string"/>
+      <xs:element name="Prenom" type="xs:string"/>
+      <xs:element name="Adresse" type="xs:string"/>
+      <xs:element name="Telephone" type="xs:string"/>
+      <xs:element name="Historique_commandes" type="Commande" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition du livreur -->
+  <xs:complexType name="Livreur">
+    <xs:sequence>
+      <xs:element name="ID_Livreur" type="ID"/>
+      <xs:element name="Prenom" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition du commentaire -->
+  <xs:complexType name="Commentaire">
+    <xs:sequence>
+      <xs:element name="ID_Commentaire" type="ID"/>
+      <xs:element name="Texte" type="xs:string"/>
+      <xs:element name="Note" type="xs:decimal"/>
+      <xs:element name="ID_Client" type="ID"/>
+      <xs:element name="ID_Recette" type="ID"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Type complexe pour Sejours qui contiendra tout le reste -->
+  <xs:complexType name="BoiteBoxType">
+    <xs:sequence>
+      <xs:element name="Recette" type="Recette" maxOccurs="unbounded"/>
+      <xs:element name="Menu" type="Menu" maxOccurs="unbounded"/>
+      <xs:element name="Commande" type="Commande" maxOccurs="unbounded"/>
+      <xs:element name="Client" type="Client" maxOccurs="unbounded"/>
+      <xs:element name="Livreur" type="Livreur" maxOccurs="unbounded"/>
+      <xs:element name="Commentaire" type="Commentaire" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition de l'élément racine Sejours -->
+  <xs:element name="BoiteBox" type="BoiteBoxType"/>
+</xs:schema>

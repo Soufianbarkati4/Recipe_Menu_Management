@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BoiteBox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="recette.xsd">
+
+        <!-- Recette Originale -->
+    <Recette>
+        <ID_Recette>001</ID_Recette>
+        <Nom>Velouté de potimarron</Nom>
+        <Description>Une soupe onctueuse de potimarron agrémentée de crème fraîche et d'un soupçon de muscade pour réchauffer les soirées d'automne.</Description>
+        <Type>Soupe</Type>
+        <Ingredients>            
+                <ID_Ingredient>01</ID_Ingredient>
+                <Nom>Potimarron</Nom>
+                <Quantite>1.5</Quantite>
+                <Unite>kg</Unite>            
+        </Ingredients>
+    </Recette>
+        <!-- Nouvelle Recette 1 -->
+    <Recette>
+      <ID_Recette>002</ID_Recette>
+      <Nom>Salade Niçoise</Nom>
+      <Description>Une salade fraîche composée de thon, d'œufs durs, d'olives noires et de légumes croquants.</Description>
+      <Type>Salade</Type>
+      <Ingredients>
+          <ID_Ingredient>02</ID_Ingredient>
+          <Nom>Thon en conserve</Nom>
+          <Quantite>200</Quantite>
+          <Unite>g</Unite>
+      </Ingredients>
+      <Ingredients>
+          <ID_Ingredient>03</ID_Ingredient>
+          <Nom>Œufs durs</Nom>
+          <Quantite>4</Quantite>
+          <Unite>unités</Unite>
+      </Ingredients>
+    </Recette>
+    <!-- Nouvelle Recette 2 -->
+    <Recette>
+      <ID_Recette>003</ID_Recette>
+      <Nom>Quiche Lorraine</Nom>
+      <Description>Une quiche classique lorraine avec une base de crème fraîche, d'œufs et de lardons, cuite à la perfection.</Description>
+      <Type>Quiche</Type>
+      <Ingredients>
+          <ID_Ingredient>04</ID_Ingredient>
+          <Nom>Lardons</Nom>
+          <Quantite>200</Quantite>
+          <Unite>g</Unite>
+        </Ingredients>
+        <Ingredients>
+          <ID_Ingredient>05</ID_Ingredient>
+          <Nom>Crème fraîche</Nom>
+          <Quantite>250</Quantite>
+          <Unite>ml</Unite>
+        </Ingredients>
+        <Ingredients>
+          <ID_Ingredient>06</ID_Ingredient>
+          <Nom>Pâte brisée</Nom>
+          <Quantite>1</Quantite>
+          <Unite>unité</Unite>
+      </Ingredients>
+  </Recette>
+    <!-- Menu Original -->
+    <Menu>         
+        <ID_Menu>001</ID_Menu>
+        <Nom>Menu Automne</Nom>
+        <Prix>24.99</Prix>
+        <Recettes>            
+                <ID_Recette>001</ID_Recette>
+                <Nom>Velouté de potimarron</Nom>
+                <Description>Une soupe onctueuse de potimarron agrémentée de crème fraîche et d'un soupçon de muscade pour réchauffer les soirées d'automne.</Description>
+                <Type>Soupe</Type>
+                <Ingredients>                    
+                        <ID_Ingredient>01</ID_Ingredient>
+                        <Nom>Potimarron</Nom>
+                        <Quantite>1.5</Quantite>
+                        <Unite>kg</Unite>
+                </Ingredients>           
+        </Recettes>
+    </Menu>
+    <!-- Nouveau Menu 1 -->
+    <Menu>
+      <ID_Menu>002</ID_Menu>
+      <Nom>Menu Été</Nom>
+      <Prix>19.99</Prix>
+      <Recettes>
+          <ID_Recette>002</ID_Recette>
+          <Nom>Salade Niçoise</Nom>
+          <Description>Une salade fraîche composée de thon, d'œufs durs, d'olives noires et de légumes croquants.</Description>
+          <Type>Salade</Type>
+          <Ingredients>
+              <ID_Ingredient>02</ID_Ingredient>
+              <Nom>Thon en conserve</Nom>
+              <Quantite>200</Quantite>
+              <Unite>g</Unite>
+          </Ingredients>
+          <Ingredients>
+              <ID_Ingredient>03</ID_Ingredient>
+              <Nom>Œufs durs</Nom>
+              <Quantite>4</Quantite>
+              <Unite>unités</Unite>
+          </Ingredients>
+      </Recettes>
+    </Menu>
+    <!-- Nouveau Menu 2 -->
+    <Menu>
+      <ID_Menu>003</ID_Menu>
+      <Nom>Menu Hiver</Nom>
+      <Prix>29.99</Prix>
+      <Recettes>
+        <ID_Recette>003</ID_Recette>
+        <Nom>Quiche Lorraine</Nom>
+        <Description>Une quiche classique lorraine avec une base de crème fraîche, d'œufs et de lardons, cuite à la perfection.</Description>
+        <Type>Quiche</Type>
+        <Ingredients>
+            <ID_Ingredient>04</ID_Ingredient>
+            <Nom>Lardons</Nom>
+            <Quantite>200</Quantite>
+            <Unite>g</Unite>
+          </Ingredients>
+          <Ingredients>
+            <ID_Ingredient>05</ID_Ingredient>
+            <Nom>Crème fraîche</Nom>
+            <Quantite>250</Quantite>
+            <Unite>ml</Unite>
+          </Ingredients>
+          <Ingredients>
+            <ID_Ingredient>06</ID_Ingredient>
+            <Nom>Pâte brisée</Nom>
+            <Quantite>1</Quantite>
+            <Unite>unité</Unite>
+        </Ingredients>
+      </Recettes>
+  </Menu>
+    <!-- Commande Originale -->
+    <Commande>     
+        <ID_Commande>001</ID_Commande>
+        <Total>49.98</Total>
+        <Mode_paiement>Carte</Mode_paiement>
+        <ID_Client>001</ID_Client>
+        <ID_Livreur>001</ID_Livreur>
+        <Menus>            
+                <ID_Menu>001</ID_Menu>
+                <Nom>Menu Automne</Nom>
+                <Prix>24.99</Prix>
+                <Recettes>
+                    <ID_Recette>001</ID_Recette>
+                    <Nom>Velouté de potimarron</Nom>
+                    <Description>Une soupe onctueuse de potimarron agrémentée de crème fraîche et d'un soupçon de muscade pour réchauffer les soirées d'automne.</Description>
+                    <Type>Soupe</Type>
+                    <Ingredients>
+                            <ID_Ingredient>01</ID_Ingredient>
+                            <Nom>Potimarron</Nom>
+                            <Quantite>1.5</Quantite>
+                            <Unite>kg</Unite>
+                    </Ingredients>
+                </Recettes>            
+        </Menus>
+    </Commande>
+        <!-- Nouvelle Commande 1 -->
+    <Commande>
+      <ID_Commande>002</ID_Commande>
+      <Total>39.98</Total>
+      <Mode_paiement>Carte</Mode_paiement>
+      <ID_Client>002</ID_Client>
+      <ID_Livreur>002</ID_Livreur>
+      <Menus>
+        <ID_Menu>002</ID_Menu>
+        <Nom>Menu Été</Nom>
+        <Prix>19.99</Prix>
+        <Recettes>
+            <ID_Recette>002</ID_Recette>
+            <Nom>Salade Niçoise</Nom>
+            <Description>Une salade fraîche composée de thon, d'œufs durs, d'olives noires et de légumes croquants.</Description>
+            <Type>Salade</Type>
+            <Ingredients>
+                <ID_Ingredient>02</ID_Ingredient>
+                <Nom>Thon en conserve</Nom>
+                <Quantite>200</Quantite>
+                <Unite>g</Unite>
+            </Ingredients>
+            <Ingredients>
+                <ID_Ingredient>03</ID_Ingredient>
+                <Nom>Œufs durs</Nom>
+                <Quantite>4</Quantite>
+                <Unite>unités</Unite>
+            </Ingredients>
+        </Recettes>
+      </Menus>
+    </Commande>
+    <!-- Nouvelle Commande 2 -->
+    <Commande>
+      <ID_Commande>003</ID_Commande>
+      <Total>59.98</Total>
+      <Mode_paiement>PayPal</Mode_paiement>
+      <ID_Client>003</ID_Client>
+      <ID_Livreur>003</ID_Livreur>
+      <Menus>
+        <ID_Menu>003</ID_Menu>
+        <Nom>Menu Hiver</Nom>
+        <Prix>29.99</Prix>
+        <Recettes>
+          <ID_Recette>003</ID_Recette>
+          <Nom>Quiche Lorraine</Nom>
+          <Description>Une quiche classique lorraine avec une base de crème fraîche, d'œufs et de lardons, cuite à la perfection.</Description>
+          <Type>Quiche</Type>
+          <Ingredients>
+              <ID_Ingredient>04</ID_Ingredient>
+              <Nom>Lardons</Nom>
+              <Quantite>200</Quantite>
+              <Unite>g</Unite>
+            </Ingredients>
+            <Ingredients>
+              <ID_Ingredient>05</ID_Ingredient>
+              <Nom>Crème fraîche</Nom>
+              <Quantite>250</Quantite>
+              <Unite>ml</Unite>
+            </Ingredients>
+            <Ingredients>
+              <ID_Ingredient>06</ID_Ingredient>
+              <Nom>Pâte brisée</Nom>
+              <Quantite>1</Quantite>
+              <Unite>unité</Unite>
+          </Ingredients>
+        </Recettes>
+      </Menus>
+    </Commande>
+    <!-- Client Original -->
+    <Client>     
+        <ID_Client>001</ID_Client>
+        <Nom>Dupont</Nom>
+        <Prenom>Jean</Prenom>
+        <Adresse>123 rue de Paris, 75001 Paris</Adresse>
+        <Telephone>0102030405</Telephone>
+    </Client>
+    <!-- Nouveau Client 1 -->
+    <Client>
+      <ID_Client>002</ID_Client>
+      <Nom>Martin</Nom>
+      <Prenom>Lucie</Prenom>
+      <Adresse>456 avenue des Champs-Élysées, 75008 Paris</Adresse>
+      <Telephone>0607080910</Telephone>
+    </Client>
+    <!-- Nouveau Client 2 -->
+    <Client>
+      <ID_Client>003</ID_Client>
+      <Nom>Durand</Nom>
+      <Prenom>Émilie</Prenom>
+      <Adresse>789 boulevard Saint-Germain, 75006 Paris</Adresse>
+      <Telephone>0112131415</Telephone>
+    </Client>
+     <!-- Livreur Original -->
+    <Livreur>
+        <ID_Livreur>001</ID_Livreur>
+        <Prenom>Marc</Prenom>
+    </Livreur>
+    <!-- Nouveau Livreur 1 -->
+    <Livreur>
+      <ID_Livreur>002</ID_Livreur>
+      <Prenom>Sophie</Prenom>
+    </Livreur>
+    <!-- Nouveau Livreur 2 -->
+    <Livreur>
+      <ID_Livreur>003</ID_Livreur>
+      <Prenom>Julien</Prenom>
+    </Livreur>
+        <!-- Commentaire Original -->
+    <Commentaire>
+        <ID_Commentaire>001</ID_Commentaire>
+        <Texte>Excellente soupe, parfaite pour l'hiver!</Texte>
+        <Note>4.5</Note>
+        <ID_Client>001</ID_Client>
+        <ID_Recette>001</ID_Recette>
+    </Commentaire>
+    <!-- Nouveau Commentaire 1 -->
+    <Commentaire>
+      <ID_Commentaire>002</ID_Commentaire>
+      <Texte>Salade fraîche et savoureuse, idéale pour l'été.</Texte>
+      <Note>4.7</Note>
+      <ID_Client>002</ID_Client>
+      <ID_Recette>002</ID_Recette>
+    </Commentaire>
+    <!-- Nouveau Commentaire 2 -->
+    <Commentaire>
+      <ID_Commentaire>003</ID_Commentaire>
+      <Texte>Quiche délicieuse, un vrai régal pour les soirées d'hiver.</Texte>
+      <Note>4.8</Note>
+      <ID_Client>003</ID_Client>
+      <ID_Recette>003</ID_Recette>
+    </Commentaire>
+</BoiteBox>
