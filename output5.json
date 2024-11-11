@@ -1,0 +1,50 @@
+{
+"Recettes": [{
+"ID_Recette": "001",
+"Nom": "Velouté de potimarron",
+"Description": "Une soupe onctueuse de potimarron agrémentée de crème fraîche et d'un soupçon de muscade pour réchauffer les soirées d'automne.",
+"Type": "Soupe",
+"Ingredients": [{
+"ID_Ingredient": "01",
+"Nom": "Potimarron",
+"Quantite": 1.5,"Unite": "kg"
+}]
+},{
+"ID_Recette": "002",
+"Nom": "Salade Niçoise",
+"Description": "Une salade fraîche composée de thon, d'œufs durs, d'olives noires et de légumes croquants.",
+"Type": "Salade",
+"Ingredients": [{
+"ID_Ingredient": "02",
+"Nom": "Thon en conserve",
+"Quantite": 200,"Unite": "g"
+},{
+"ID_Ingredient": "03",
+"Nom": "Œufs durs",
+"Quantite": 4,"Unite": "unités"
+}]
+},{
+"ID_Recette": "003",
+"Nom": "Quiche Lorraine",
+"Description": "Une quiche classique lorraine avec une base de crème fraîche, d'œufs et de lardons, cuite à la perfection.",
+"Type": "Quiche",
+"Ingredients": [{
+"ID_Ingredient": "04",
+"Nom": "Lardons",
+"Quantite": 200,"Unite": "g"
+},{
+"ID_Ingredient": "05",
+"Nom": "Crème fraîche",
+"Quantite": 250,"Unite": "ml"
+},{
+"ID_Ingredient": "06",
+"Nom": "Pâte brisée",
+"Quantite": 1,"Unite": "unité"
+}]
+}]
+"Menus": [001Menu Automne24.99001Velouté de potimarronUne soupe onctueuse de potimarron agrémentée de crème fraîche et d'un soupçon de muscade pour réchauffer les soirées d'automne.Soupe01Potimarron1.5kg002Menu Été19.99002Salade NiçoiseUne salade fraîche composée de thon, d'œufs durs, d'olives noires et de légumes croquants.Salade02Thon en conserve200g03Œufs durs4unités003Menu Hiver29.99003Quiche LorraineUne quiche classique lorraine avec une base de crème fraîche, d'œufs et de lardons, cuite à la perfection.Quiche04Lardons200g05Crème fraîche250ml06Pâte brisée1unité]
+"Commandes": [00149.98Carte001001001Menu Automne24.99001Velouté de potimarronUne soupe onctueuse de potimarron agrémentée de crème fraîche et d'un soupçon de muscade pour réchauffer les soirées d'automne.Soupe01Potimarron1.5kg00239.98Carte002002002Menu Été19.99002Salade NiçoiseUne salade fraîche composée de thon, d'œufs durs, d'olives noires et de légumes croquants.Salade02Thon en conserve200g03Œufs durs4unités00359.98PayPal003003003Menu Hiver29.99003Quiche LorraineUne quiche classique lorraine avec une base de crème fraîche, d'œufs et de lardons, cuite à la perfection.Quiche04Lardons200g05Crème fraîche250ml06Pâte brisée1unité]
+"Clients": [001DupontJean123 rue de Paris, 75001 Paris0102030405002MartinLucie456 avenue des Champs-Élysées, 75008 Paris0607080910003DurandÉmilie789 boulevard Saint-Germain, 75006 Paris0112131415]
+"Livreurs": [001Marc002Sophie003Julien]
+"Commentaires": [001Excellente soupe, parfaite pour l'hiver!4.5001001002Salade fraîche et savoureuse, idéale pour l'été.4.7002002003Quiche délicieuse, un vrai régal pour les soirées d'hiver.4.8003003]
+}

@@ -1,0 +1,176 @@
+{
+  "Recettes": [
+    {
+      "ID_Recette": "001",
+      "Nom": "Velouté de potimarron",
+      "Description": "Une soupe onctueuse de potimarron agrémentée de crème fraîche et d'un soupçon de muscade pour réchauffer les soirées d'automne.",
+      "Type": "Soupe",
+      "Ingredients": [
+        {
+          "Nom": "Potimarron",
+          "Quantite": "1.5",
+          "Unite": "kg"
+        }
+      ]
+    },
+    {
+      "ID_Recette": "002",
+      "Nom": "Salade Niçoise",
+      "Description": "Une salade fraîche composée de thon, d'œufs durs, d'olives noires et de légumes croquants.",
+      "Type": "Salade",
+      "Ingredients": [
+        {
+          "Nom": "Thon en conserve",
+          "Quantite": "200",
+          "Unite": "g"
+        },
+        {
+          "Nom": "Œufs durs",
+          "Quantite": "4",
+          "Unite": "unités"
+        }
+      ]
+    },
+    {
+      "ID_Recette": "003",
+      "Nom": "Quiche Lorraine",
+      "Description": "Une quiche classique lorraine avec une base de crème fraîche, d'œufs et de lardons, cuite à la perfection.",
+      "Type": "Quiche",
+      "Ingredients": [
+        {
+          "Nom": "Lardons",
+          "Quantite": "200",
+          "Unite": "g"
+        },
+        {
+          "Nom": "Crème fraîche",
+          "Quantite": "250",
+          "Unite": "ml"
+        },
+        {
+          "Nom": "Pâte brisée",
+          "Quantite": "1",
+          "Unite": "unité"
+        }
+      ]
+    }
+  ],
+  "Menus": [
+    {
+      "ID_Menu": "001",
+      "Nom": "Menu Automne",
+      "Prix": "24.99",
+      "Recettes": [
+        "001"
+      ]
+    },
+    {
+      "ID_Menu": "002",
+      "Nom": "Menu Été",
+      "Prix": "19.99",
+      "Recettes": [
+        "002"
+      ]
+    },
+    {
+      "ID_Menu": "003",
+      "Nom": "Menu Hiver",
+      "Prix": "29.99",
+      "Recettes": [
+        "003"
+      ]
+    }
+  ],
+  "Commandes": [
+    {
+      "ID_Commande": "001",
+      "Total": "49.98",
+      "Mode_paiement": "Carte",
+      "ID_Client": "001",
+      "ID_Livreur": "001",
+      "Menus": [
+        "001"
+      ]
+    },
+    {
+      "ID_Commande": "002",
+      "Total": "39.98",
+      "Mode_paiement": "Carte",
+      "ID_Client": "002",
+      "ID_Livreur": "002",
+      "Menus": [
+        "002"
+      ]
+    },
+    {
+      "ID_Commande": "003",
+      "Total": "59.98",
+      "Mode_paiement": "PayPal",
+      "ID_Client": "003",
+      "ID_Livreur": "003",
+      "Menus": [
+        "003"
+      ]
+    }
+  ],
+  "Clients": [
+    {
+      "ID_Client": "001",
+      "Nom": "Dupont",
+      "Prenom": "Jean",
+      "Adresse": "123 rue de Paris, 75001 Paris",
+      "Telephone": "0102030405"
+    },
+    {
+      "ID_Client": "002",
+      "Nom": "Martin",
+      "Prenom": "Lucie",
+      "Adresse": "456 avenue des Champs-Élysées, 75008 Paris",
+      "Telephone": "0607080910"
+    },
+    {
+      "ID_Client": "003",
+      "Nom": "Durand",
+      "Prenom": "Émilie",
+      "Adresse": "789 boulevard Saint-Germain, 75006 Paris",
+      "Telephone": "0112131415"
+    }
+  ],
+  "Livreurs": [
+    {
+      "ID_Livreur": "001",
+      "Prenom": "Marc"
+    },
+    {
+      "ID_Livreur": "002",
+      "Prenom": "Sophie"
+    },
+    {
+      "ID_Livreur": "003",
+      "Prenom": "Julien"
+    }
+  ],
+  "Commentaires": [
+    {
+      "ID_Commentaire": "001",
+      "Texte": "Excellente soupe, parfaite pour l'hiver!",
+      "Note": "4.5",
+      "ID_Client": "001",
+      "ID_Recette": "001"
+    },
+    {
+      "ID_Commentaire": "002",
+      "Texte": "Salade fraîche et savoureuse, idéale pour l'été.",
+      "Note": "4.7",
+      "ID_Client": "002",
+      "ID_Recette": "002"
+    },
+    {
+      "ID_Commentaire": "003",
+      "Texte": "Quiche délicieuse, un vrai régal pour les soirées d'hiver.",
+      "Note": "4.8",
+      "ID_Client": "003",
+      "ID_Recette": "003"
+    }
+  ]
+}
